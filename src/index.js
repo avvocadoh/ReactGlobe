@@ -33,6 +33,7 @@ function App() {
       pointerEventPosition: { x: event.clientX, y: event.clientY }
     });
     setDetails(getTooltipContent(marker));
+    //setDetails(showCard(marker));
   }
 
   function onDefocus(previousCoordinates, event) {
@@ -45,7 +46,8 @@ function App() {
   }
 
   return (
-    <div style={{ width: "100vw", height: "96vh" }}>
+
+    <div style={{ width: "99vw", height: "97vh" }}>
       <ReactGlobe
         markers={markers}
         markerOptions={{
@@ -60,12 +62,18 @@ function App() {
         }}
         onClickMarker={onClickMarker}
         onDefocus={onDefocus}
+
+
       />
 
       {details && (
         <div
           style={{
+<<<<<<< HEAD
             background: "transparent",
+=======
+            //background: "white",
+>>>>>>> upstream/master
             position: "absolute",
             fontSize: 20,
             top: 0,
@@ -73,6 +81,7 @@ function App() {
             padding: 12
           }}
         >
+<<<<<<< HEAD
           <p>{details}</p>
 
           <p>
@@ -100,6 +109,26 @@ function App() {
       )}
 
     
+=======
+
+          {/* <p>{details}</p> */}
+          <p>
+            <div><CardStack
+              height={500}
+              width={400}
+              background='#f8f8f8'
+              hoverOffset={25}>
+              <Card background='#2980B9'>
+                <h1>Number 1</h1>
+              </Card>
+              <Card background='#27AE60'>
+                <h1>Number 2</h1>
+              </Card>
+            </CardStack></div>
+          </p>
+        </div>
+      )}
+>>>>>>> upstream/master
     </div>
 
   );
