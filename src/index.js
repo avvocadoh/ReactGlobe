@@ -70,10 +70,14 @@ function App() {
         <div
           style={{
 <<<<<<< HEAD
+<<<<<<< HEAD
             background: "transparent",
 =======
             //background: "white",
 >>>>>>> upstream/master
+=======
+            //background: "white",
+>>>>>>> 72a56122bd792258d18d63d6a9eca84ccd68a052
             position: "absolute",
             fontSize: 20,
             top: 0,
@@ -81,6 +85,7 @@ function App() {
             padding: 12
           }}
         >
+<<<<<<< HEAD
 <<<<<<< HEAD
           <p>{details}</p>
 
@@ -110,6 +115,9 @@ function App() {
 
     
 =======
+=======
+
+>>>>>>> 72a56122bd792258d18d63d6a9eca84ccd68a052
 
           {/* <p>{details}</p> */}
           <p>
@@ -128,7 +136,10 @@ function App() {
           </p>
         </div>
       )}
+<<<<<<< HEAD
 >>>>>>> upstream/master
+=======
+>>>>>>> 72a56122bd792258d18d63d6a9eca84ccd68a052
     </div>
 
   );
